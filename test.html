@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form>
+    <h1>Game Register</h1>
+    <p>
+        <label for="email">Email</label>
+        <input required type="email" name="email" id="email" placeholder="Email">
+        <label for="pass">Password</label>
+        <input required minlength="6" maxlength="12" type="password" name="pass" id="pass" placeholder="Password">
+    </p>
+    <p>
+        <label for="skill">Skill level:</label>
+        <select required id="skill" name="skill">
+            <option selected disabled value="">Skill</option>
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Pro">Pro</option>
+            <option value="World class">Worl class</option>
+        </select>
+    </p>
+    <p><strong>Would you like to receive daily newsletter?</strong></p>
+    <p>
+        <label for="yes">Yes</label>
+    <input required id="yes" type="radio" name="newsletter" value="Yes">
+        <label for="no">No</label>
+    <input id="no" type="radio" name="newsletter" value="No">
+    </p>
+    <p>
+        I agree to the Terms and Conditions:
+        <input required type="checkbox" name="terms">
+    </p>
+    <p>
+        <input type="submit" name="submit" value="Submit">
+    </p>
+    </form>
+</body>
+</html>
